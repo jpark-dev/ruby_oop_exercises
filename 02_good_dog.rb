@@ -1,8 +1,12 @@
 class GoodDog
-  def initialize
-    puts "This object was initizlied!"
+  # constructor
+  def initialize(name)
+
+    # @variable = instance variable
+    @name = name
+
   end
 end
 
-sparky = GoodDog.new
+sparky = GoodDog.new("Sparky")
 
