@@ -1,17 +1,11 @@
 class GoodDog
+  attr_accessor :name
+  
   # constructor
   def initialize(name)
 
     # @variable = instance variable
     @name = name
-  end
-
-  def name            # This was renamed from "get_name"
-    @name
-  end
-
-  def name=(n)        # This was rename from "set_name="
-    @name = n
   end
   
   def speak
