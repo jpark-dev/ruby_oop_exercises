@@ -6,12 +6,12 @@ class GoodDog
     @name = name
   end
 
-  def get_name
+  def name            # This was renamed from "get_name"
     @name
   end
 
-  def set_name=(name)
-    @name = name
+  def name=(n)        # This was rename from "set_name="
+    @name = n
   end
   
   def speak
@@ -21,9 +21,9 @@ end
 
 sparky = GoodDog.new("Sparky")
 puts sparky.speak
-puts sparky.get_name
-sparky.set_name = "Twice"
-puts sparky.get_name
+puts sparky.name
+sparky.name = "Twice"
+puts sparky.name
 
 fido = GoodDog.new("Fido")
 puts fido.speak
