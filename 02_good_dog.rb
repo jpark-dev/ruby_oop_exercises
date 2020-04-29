@@ -1,6 +1,7 @@
 class GoodDog
+  # attr_reader / attr_writer can be used if just getter/setter is needed.
   attr_accessor :name
-  
+
   # constructor
   def initialize(name)
 
@@ -9,7 +10,7 @@ class GoodDog
   end
   
   def speak
-    "#{@name} says Arf!"
+    "#{name} says Arf!"
   end
 end
 
